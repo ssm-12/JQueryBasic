@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/modalCss.css">
+</head>
+<body>
+	<div id="controlHolder">
+		<!-- Modal Trigger -->
+		<button id="btnTrigger">Click me to trigger Modal</button>
+
+		<!-- Modal Window -->
+		<div id="modal" style="display: none;">
+			
+			<div style="padding-left: 0.5em; padding-bottom: 0.5em; padding-right: 0.5em;">
+				<div class="modalHeader">
+					<p><b>Header Text </b><span style="float:right"><i id="iconClose" class="far fa-times-circle hover"></i></span></p>
+				</div>
+
+				<div class="modalBody">
+					<h4>This is the header section of the modal body content</h4>
+					These are some dummy text to demonstrate the modal body.
+					These are some dummy text to demonstrate the modal body.
+					These are some dummy text to demonstrate the modal body.
+					These are some dummy text to demonstrate the modal body.
+					These are some dummy text to demonstrate the modal body.
+					These are some dummy text to demonstrate the modal body.
+				</div>
+
+				<div class="modalFooter">
+					<button id="btnCancel" class="hover">Cancel</button>
+					<button class="hover">Save</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="divBgImage" style="display: none;">
+
+	</div>
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/modal.js"></script>
+</body>
+</html>

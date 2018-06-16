@@ -1,0 +1,128 @@
+/*For small screen devices*/
+@media screen and (max-width: 480px) {
+    body {
+    	font-size: 10px;
+    }
+
+    #btnTrigger {
+		width: 60vw;
+		height: 35vw;
+	}
+
+	#modal {
+		width: 90vw;
+	}
+}
+
+/*For medium screen devices*/
+@media screen and (min-width: 481px) and (max-width: 786px) {
+    body {
+    	font-size: 12px;
+    }
+
+    #btnTrigger {
+		width: 40vw;
+		height: 20vw;
+	}
+
+	#modal {
+		width: 70vw;
+	}
+}
+
+/*For large screen devices*/
+@media screen and (min-width: 789px) {
+    body {
+    	font-size: 14px;
+    }
+
+    #btnTrigger {
+		width: 20vw;
+		height: 10vw;
+	}
+
+	#modal {
+		width: 50vw;
+	}
+}
+
+#controlHolder {
+	display:flex;
+  	width: 98vw;
+  	height: 90vh;
+  	position: absolute;
+  	justify-content:center;
+  	align-items : center;
+}
+
+#btnTrigger {
+	border-radius: 10px;
+	background-color: #347ae2;
+	font-size: 1.5em;
+}
+
+#btnTrigger:hover {
+	background-color: orange;
+	cursor: pointer;
+}
+
+#modal {
+	display: flex;
+	min-height: 20vh;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px 4px #888888;
+	background-color: white!important;
+	z-index: 1;
+}
+
+.modalHeader, .modalBody {
+	border-bottom: 0.1px solid;
+	border-color: #665e5e;
+	padding-bottom: 10px;
+}
+
+.modalHeader {
+	font-size: 1.5em;
+}
+
+body {
+	background-image: url("../images/background.jpg");
+}
+
+button {
+	/*box-shadow: 2px 2px ;*/
+	height: 50px;
+	width: 150px;
+	border-radius: 5px;
+	margin-left: 1em;
+	margin-top: 1em;
+	float: right;
+	border-color: #848484;
+	background-color: #437ae8;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.hover:hover {
+	background-color: green;
+	color: white;
+	cursor: pointer;
+}
+
+.far {
+	font-size: 1.5em;
+	border-radius: 5px;
+}
+
+#divBgImage {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: gray;
+    opacity: 0.7;
+	/*background-color: green;
+	background-image: url("../images/background.jpg");*/
+}

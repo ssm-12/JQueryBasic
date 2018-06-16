@@ -1,0 +1,65 @@
+/*For small screen devices*/
+@media screen and (max-width: 480px) {
+    #accordion {
+    	width: 90%;
+    }
+
+    body {
+    	font-size: 10px;
+    }
+}
+
+/*For medium screen devices*/
+@media screen and (min-width: 481px) and (max-width: 786px) {
+    #accordion {
+    	width: 80%;
+    }
+
+    body {
+    	font-size: 12px;
+    }
+}
+
+/*For large screen devices*/
+@media screen and (min-width: 789px) {
+    #accordion {
+    	width: 60%;
+    }
+
+    body {
+    	font-size: 14px;
+    }
+}
+
+#accordion {
+	display: flex;
+	margin: auto;
+	padding-left: 0.5em; 
+	flex-direction: column;
+}
+
+.panel {
+	display: flex;
+	flex-direction: column;
+	border-style: solid;
+	border-radius: 5px;
+	margin-bottom: 1px;
+	border-color: #b5bbce;
+}
+
+.panelHead {
+	display: flex;
+	width: 100%;
+	background-color: #c9cfdb;
+	border-radius: 2px;
+}
+
+.panelHead:hover {
+	background-color: #4f5256 !important;
+	color: white !important;
+	cursor: pointer;
+}
+
+.panelBody {
+	display: flex;
+}
