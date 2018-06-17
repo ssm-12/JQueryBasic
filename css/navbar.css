@@ -2,6 +2,10 @@
     body {
     	font-size: 10px;
     }
+
+    #dropDownContainer {
+    	width: 90vw;
+    }
 }
 
 /*For medium screen devices*/
@@ -9,12 +13,20 @@
     body {
     	font-size: 12px;
     }
+
+    #dropDownContainer {
+    	width: 40vw;
+    }
 }
 
 /*For large screen devices*/
 @media screen and (min-width: 789px) {
     body {
     	font-size: 14px;
+    }
+
+    #dropDownContainer {
+    	width: 20vw;
     }
 }
 
@@ -105,4 +117,27 @@
 .alignRight {
 	float: right!important;
 	text-align: right;
+}
+
+
+#dropDownContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #d8d8d8;
+	overflow-x: hidden;
+	display: none;
+	position: absolute;
+	border-radius: 3px;
+}
+
+.dropDownMenu {
+	list-style-type: none;
+	padding: 0.3em;
+}
+
+.dropDownMenu li a {
+	font-size: 1.3em;
+	color: black!important;
 }
